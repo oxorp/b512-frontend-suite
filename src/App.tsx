@@ -1,13 +1,15 @@
-import '@mantine/core/styles.css';
-import '@mantine/dropzone/styles.css';
-import { MantineProvider } from '@mantine/core';
-import { Router } from './Router';
-import { theme } from './theme';
+import '@mantine/core/styles.css'
+import '@mantine/dropzone/styles.css'
+import { MantineProvider } from '@mantine/core'
+import { Router } from './Router'
+import { theme } from './theme'
 
-export default function App() {
+const App = (): React.ReactElement => {
   return (
     <MantineProvider theme={theme}>
       <Router />
     </MantineProvider>
-  );
+  )
 }
+
+export default App

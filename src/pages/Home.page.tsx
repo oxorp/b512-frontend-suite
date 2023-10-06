@@ -1,11 +1,16 @@
-import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import { Dropzone } from '@mantine/dropzone'
 
-export function HomePage() {
+const HomePage = (): React.ReactElement => {
   return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
-  );
+    <div>
+      <Dropzone
+        accept={['file/txt']}
+        onDrop={(s): void => {
+          console.log(s)
+        }}
+      />
+    </div>
+  )
 }
+
+export default HomePage
