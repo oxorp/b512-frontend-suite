@@ -8,5 +8,6 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/semi": "off",
     "arrow-body-style": "off",
+    '@typescript-eslint/no-unused-vars': 'off',
   },
 };

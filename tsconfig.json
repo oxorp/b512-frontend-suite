@@ -20,6 +20,6 @@
       "@test-utils": ["./test-utils"]
     }
   },
-  "include": ["src", "test-utils"],
+  "include": ["src", "test-utils", "types/*.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
